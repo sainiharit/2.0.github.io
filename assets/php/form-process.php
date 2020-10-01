@@ -24,14 +24,6 @@ if (empty($_POST["msg_subject"])) {
 }
 
 
-// MESSAGE
-if (empty($_POST["message"])) {
-    $errorMSG .= "Message is required ";
-} else {
-    $message = $_POST["message"];
-}
-
-
 $EmailTo = "email@gmail.com";
 $Subject = "New Message Received";
 
@@ -62,6 +54,18 @@ if ($success && $errorMSG == ""){
     } else {
         echo $errorMSG;
     }
+    // MSG SUBJECT
+    if (empty($_POST["msg_subject"])) {
+        $errorMSG .= "Subject is required ";
+    } else {
+        $msg_subject = $_POST["msg_subject"];
+    }
+}
+// MESSAGE
+if (empty($_POST["message"])) {
+    $errorMSG .= "Message is required ";
+} else {
+    $message = $_POST["message"];
 }
 
 ?>
