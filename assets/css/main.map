@@ -12,9 +12,7 @@
 		"../scss/_portfolio.scss",
 		"../scss/_team.scss",
 		"../scss/_blog.scss",
-		"../scss/_contact.scss",
-		"../scss/_footer.scss",
-		"../scss/_shortcode.scss",
+		"../scss/_contact.scss"
 		"../scss/_countdown.scss",
 		"../scss/_pricing.scss",
 		"../scss/_carousel.scss"
