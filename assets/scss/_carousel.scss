@@ -112,3 +112,44 @@
 	color: #fff; 
  	border-color: #fff;
 }
+
+	.carousel-control{
+		display: none;
+		transition: $transition;
+	}
+	.carousel-indicators{cursor: pointer; bottom: 90px;}
+	&:hover {
+		.carousel-control{
+			display: block;
+			transition: $transition;
+			-webkit-animation-duration: 1s;
+			  animation-duration: 1s;
+			  -webkit-animation-fill-mode: both;
+			  animation-fill-mode: both;
+			  -webkit-animation-name: fadeIn;
+			  animation-name: fadeIn;
+		}
+	}
+	.carousel-item img {
+	    position: relative;
+	    width: 100%;
+	}
+	.carousel-inner .carousel-item::after {
+	    bottom: 0;
+	    content: "";
+	    left: 0;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	}
+	.carousel-item .carousel-caption {
+	    opacity: 0;
+	    transition: opacity 100ms ease 0s;
+	    z-index: 0;
+	    .heading{
+			font-size: 48px;
+			font-weight: 700;
+			color: #fff;
+			text-transform: uppercase;
+			letter-spacing: 0.1rem;
+			margin-top: 30px;
