@@ -112,6 +112,14 @@
           scrollTop: 0
         }, 600);
         return false;
+	           jQuery('#clock').countdown('2019/10/21',function(event){
+      var $this=jQuery(this).html(event.strftime(''
+      +'<div class="time-entry days"><span>%-D</span> Days</div> '
+      +'<div class="time-entry hours"><span>%H</span> Hours</div> '
+      +'<div class="time-entry minutes"><span>%M</span> Minutes</div> '
+      +'<div class="time-entry seconds"><span>%S</span> Seconds</div> '));
+    });
+
       });
 
   });      
